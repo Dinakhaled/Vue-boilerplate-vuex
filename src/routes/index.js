@@ -11,6 +11,7 @@ export const router = new VueRouter({
   mode: 'history',
   routes: [
   { path: '/', component: lazyLoad('Home') },
-  { path: '/about', component: lazyLoad('AboutUs') }
+  { path: '/about', component: lazyLoad('AboutUs') },
+  { path: "*", component: lazyLoad('NotFound') }
 ]
 })

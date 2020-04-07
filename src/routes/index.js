@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
+import Guards from "./Guards";
 
 Vue.use(VueRouter);
 
@@ -11,7 +12,9 @@ export const router = new VueRouter({
   mode: 'history',
   routes: [
   { path: '/', component: lazyLoad('Home') },
-  { path: '/about', component: lazyLoad('AboutUs') },
+  { path: '/about',
+    beforeEnter : Guards,
+    component: lazyLoad('AboutUs') },
   { path: "*", component: lazyLoad('NotFound') }
 ]
 })

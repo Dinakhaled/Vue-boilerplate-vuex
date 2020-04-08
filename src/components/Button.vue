@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="btn btn-primary">{{text}}</button>
+  <button type="button" class="btn btn-success">{{text}}</button>
 </template>
 
 <script>
@@ -12,5 +12,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+  .btn {
+    background-color: #41b883;
+    border: none;
+  }
 </style>

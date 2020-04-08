@@ -3,7 +3,7 @@
     <img src="../assets/images/logo.png" />
     <h1 class="mb-4">Welcome to Vue boilerplate</h1>
     <Button class="mb-4" :text="'Sample button component'" />
-    <small>Created by: <a href="https://www.github.com/Dinakhaled" target="_blank">Dina Khaled</a></small>
+    <p>Created by: <a href="https://www.github.com/Dinakhaled" target="_blank">Dina Khaled</a></p>
   </div>
 </template>
 
@@ -16,6 +16,8 @@ import Button from "../components/Button";
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+body {
+  height: 100vh;
+}
 </style>

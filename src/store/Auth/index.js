@@ -11,7 +11,6 @@ const actions = {
   login: ({ commit }) => {
     localStorage.setItem('token', true);
     commit('setToken', true)
-    // history.pushState('/home')
   },
 
   logout: ({ commit }) => {

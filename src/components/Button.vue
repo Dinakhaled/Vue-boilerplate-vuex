@@ -1,12 +1,18 @@
 <template>
-  <button type="button" class="btn btn-success">{{text}}</button>
+  <button type="button" class="btn btn-success" @click="click">{{text}}</button>
 </template>
 
 <script>
   export default {
     name: 'Button',
     props: {
-      text: String
+      text: {
+        type: String,
+        default: 'Button name'
+      },
+      click: {
+        type: Function,
+      }
     }
   }
 </script>

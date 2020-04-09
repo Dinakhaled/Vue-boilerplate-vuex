@@ -1,13 +1,5 @@
 const Auth = {
-    isAuthenticated: false,
-    authenticate() {
-        this.isAuthenticated = true;
-        console.log('Authenticated');
-    },
-    signOut() {
-        this.isAuthenticated = false;
-        console.log('Logged out!');
-    },
+    isAuthenticated: localStorage.getItem('token'),
     getAuth() {
         return this.isAuthenticated;
     }

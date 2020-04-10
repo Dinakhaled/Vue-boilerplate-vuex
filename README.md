@@ -3,6 +3,17 @@
 <h2>Description</h2>
 <p>To make our projects we almost all the times it’s the vue create appName that we use to create an app with no build configuration. Or we just make our own simple boilerplate from scratch.</p>
 
+it includes: 📝
+-Files structure
+-Routes - vue-router
+-Route guards
+-Lazyloading logic
+-Axios
+-Interceptors
+-Vuex
+-Translation (en, ar) - vue-i18n
+-Bootstrap as UI framework example 
+
 ## Project setup
 ```
 npm install

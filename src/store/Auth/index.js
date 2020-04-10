@@ -1,6 +1,6 @@
 // =========== Example ===========
 const state = {
-  token: null
+  token: JSON.parse(localStorage.getItem('token')) === true ? true : null
 };
 
 const getters = {

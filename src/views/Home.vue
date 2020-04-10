@@ -7,6 +7,8 @@
     <div class="container-fluid d-flex align-items-center flex-column justify-content-center h-100" v-if="isLoggedIn">
       <img src="../assets/images/logo.png" />
       <h1 class="mb-4">Welcome to Vue boilerplate</h1>
+      <Button :class="'mb-4'" :text="'Fetch posts - API'" :click='getPosts' />
+      <p>Number of posts: {{posts.length || 'Click to fetch'}}</p>
       <p>Created by: <a href="https://www.github.com/Dinakhaled" target="_blank">Dina Khaled</a></p>
     </div>
   </div>
@@ -19,8 +21,10 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: 'Home',
   components: { Button },
-  methods: mapActions(['login', 'logout']),
-  computed: mapGetters(['isLoggedIn'])
+  methods: {
+    ...mapActions(['login', 'logout', 'getPosts']),
+  },
+  computed: mapGetters(['isLoggedIn', 'posts'])
 }
 </script>
 

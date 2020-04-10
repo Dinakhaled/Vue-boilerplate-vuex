@@ -1,0 +1,1 @@
+export const ImgBaseURL = '#PUT_YOUR_URL_HERE';

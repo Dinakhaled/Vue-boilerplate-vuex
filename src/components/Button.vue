@@ -14,6 +14,8 @@
         type: Function,
       }
     }
+    // other syntax
+    // props: ['text', 'click']
   }
 </script>
 

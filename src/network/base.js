@@ -2,8 +2,7 @@ import axios from "axios";
 import { requestHandler, successHandler, errorHandler } from "./interceptors";
 
 export const axiosInstance = axios.create({
-  // baseURL: "#BASE_URL",
-  baseURL: 'https://jsonplaceholder.typicode.com',
+  baseURL: 'https://jsonplaceholder.typicode.com', // #BASE_URL
   params: {
     // api_key: "#API_KEY"
   }

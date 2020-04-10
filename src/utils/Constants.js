@@ -1,1 +1,1 @@
-export const ImgBaseURL = 'https://image.tmdb.org/t/p/w342';
+export const ImgBaseURL = '#PUT_YOUR_URL_HERE';

@@ -3,7 +3,7 @@
 <h2>Description</h2>
 <p>To make our projects we almost all the times it’s the vue create appName that we use to create an app with no build configuration. Or we just make our own simple boilerplate from scratch.</p>
 
-## it includes: 📝
+## Includes: 📝
 <ul>
   <li>Files structure</li>
   <li>Routes - vue-router</li>
